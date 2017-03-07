@@ -1,6 +1,7 @@
-Installing
-------------
+Installing pycron
+===================
 
+On windows:
 
 ::
 
