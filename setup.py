@@ -7,6 +7,7 @@ from distutils.extension import Extension
 
 ext_modules = [Extension("pycron", ["pycron/pycron.c", "pycron/cron/cronexpr.c", "pycron/cron/rbtree.c"],
     language="c",
+    define_macros=[('_WIN32', None), ('MS_WIN64', None)],
     include_dirs=["pycron/cron", "pywrapper-dependence/include"],
     library_dirs=["pywrapper-dependence/lib64-win"],
     libraries=["python27"]
